@@ -2,8 +2,17 @@
 :root {
     /* TEXT */
 
-    --title-size: 1.7em;
-    --paragraph-text: 1.1em;
+    --title-size: 1.4rem;
+    --paragraph-size: 1.1rem;
+    --paragraph-weight: bold;
+    --paragraph-style: italic;
+    --input-text-size: 1rem;
+    --btn-text-size: 1.3rem;
+
+    /* BOXES */
+
+    --btn-radius: 20px;
+    --form-radius: 20px;
 }
 
 body {
@@ -11,30 +20,50 @@ body {
     font-family: system-ui;
 }
 
-.main-container {
+.container {
     display: flex;
     flex-direction: column;
-    width: 500px;
-    height: 500px;
+}
+
+.form {
+    width: 450px;
     border: 1px solid black;
-    margin: 10vh auto;
+    border-radius: var(--form-radius);
+    margin: 5vh auto;
+    padding: 50px;
+
 }
 
-.form-title {
-    text-align: center;
-    font-size: var(--title-size);
-}
-
-.form-container {
-    font-size: var(--paragraph-text);
-}
-
-.form-label {
+.form-datas {
     display: flex;
     flex-direction: column;
+    margin-bottom: 20px;
 }
 
-.form-label input,
-textarea {
-    width: 250px;
+.form-datas label {
+    margin-bottom: 10px;
+    font-size: var(--paragraph-size);
+    font-weight: var(--paragraph-weight);
+    font-style: var(--paragraph-style);
+}
+
+.form-datas input {
+    font-size: var(--input-text-size);
+    padding: 4px;
+}
+
+.form-datas textarea{
+    margin-bottom: 15px;
+}
+
+.btn {
+    margin-top: 50px;
+    display: grid;
+    gap: 10px;
+}
+
+button {
+    font-size: var(--btn-text-size);
+    border-radius: var(--btn-radius);
+    padding: 5px 0px;
 }
