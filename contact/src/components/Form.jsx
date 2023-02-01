@@ -3,55 +3,47 @@ import '../styles.css'
 
 export function Form() {
   return (
-    
-    <section>
-      <div className="main-container">
-        <div className="form-title">
-          <h1>Formulario de contacto</h1>
-        </div>
-        <div className="form-container">
-          <form action="" className="form">
-          <div className="form-label">
 
-            <label>
+      <div className="container">
+          <form action="" className="form">
+            <div className="form-datas">
+            <label for="nombre">
                 Nombre:
             </label>
                 <input type="text" />
-          </div>
-          <div className="form-label">
-
-            <label>
+            </div>
+            <div className="form-datas">
+            <label for="apellidos">
                 Apellidos:
             </label>
                 <input type="text" />
-          </div>
-          <div className="form-label">
-            <label>
+            </div>
+            <div className="form-datas">
+            <label for="direccion">
                 Dirección:
             </label>
                 <input type="text" />
-          </div>
-          <div className="form-label">
-            <label>
+            </div>
+            <div className="form-datas">
+            <label for="telefono">
                 Teléfono:
             </label>
-                <input type="number" max="9" />
-          </div>
-          <div className="form-textarea">
-            <label>
-                <textarea type="text" placeholder="Coméntanos que deseas." />
+                <input type="text" />
+            </div>
+            <div className="form-datas textarea">
+            <label for="comentarios">
+              Déjanos tus comentarios:
             </label>
-          </div>
-          <div>
-
+                <textarea type="text" />
+            </div>
             <input type="checkbox" />
-            <p>Acepto la <a href="#">política de privacidad.</a></p>
-          </div>
+            <span>Acepto la <a href="#">política de privacidad.</a></span>
+          <div className="btn">
             <button type="submit">Enviar</button>
             <button type="reset">Cancelar</button>
-          </form>
           </div>
+          </form>
         </div>
-      </section>
+ 
   )
 }
