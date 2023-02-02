@@ -7,6 +7,7 @@
     --paragraph-weight: bold;
     --paragraph-style: italic;
     --input-text-size: 1rem;
+    --textarea-text-size: 1rem;
     --btn-text-size: 1.3rem;
 
     /* BOXES */
@@ -56,7 +57,12 @@ body {
     margin-bottom: 15px;
 }
 
-.btn {
+textarea {
+    font-size: var(--textarea-text-size);
+    height: 20vh;
+}
+
+.btn-container {
     margin-top: 50px;
     display: grid;
     gap: 10px;
