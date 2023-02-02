@@ -20,7 +20,7 @@ export function Form() {
             </div>
             <div className="form-datas">
             <label for="direccion">
-                Dirección:
+                Email:
             </label>
                 <input type="text" />
             </div>
@@ -32,13 +32,13 @@ export function Form() {
             </div>
             <div className="form-datas textarea">
             <label for="comentarios">
-              Déjanos tus comentarios:
+              Envíanos tu consulta:
             </label>
                 <textarea type="text" />
             </div>
             <input type="checkbox" />
-            <span>Acepto la <a href="#">política de privacidad.</a></span>
-          <div className="btn">
+            <span> *Acepto la <a href="#">política de privacidad.</a></span>
+          <div className="btn-container">
             <button type="submit">Enviar</button>
             <button type="reset">Cancelar</button>
           </div>
