@@ -59,7 +59,14 @@ const [description , setDescription] = useState('')
     //   }
 
     const handleSubmit=(e)=>{
-        console.log('enviado');
+
+        if(!name || !surname || !email || !phone) {
+
+            console.log('Los datos introducidos son erróneos.');
+        }else {
+            console.log('Hola ' + name + '. ' + '\n' +
+            'Te contactaremos al email: ' + email + ' o al teléfono ' + phone + '.');
+        }
         e.preventDefault();
    
       }
