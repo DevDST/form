@@ -41,22 +41,6 @@ const [description , setDescription] = useState('')
 
       // below function will be called when user
     // click on submit button .
-    // const handleSubmit=(e)=>{
-    //     if(password!=confPassword)
-    //     {
-    //       // if 'password' and 'confirm password'
-    //       // does not match.
-    //       alert("password Not Match");
-    //     }
-    //     else{
-    //       // display alert box with user
-    //       // 'name' and 'email' details .
-    //       alert('A form was submitted with Name :"' + name +
-    //       '" ,Age :"'+age +'" and Email :"' + email + '"');
-    //     }
-    //     e.preventDefault();
-   
-    //   }
 
     const handleSubmit=(e)=>{
 
@@ -71,7 +55,15 @@ const [description , setDescription] = useState('')
    
       }
 
+    // below function will be reset info when user
+    // click on cancel button .
+
       const handleCancel=(e)=>{
+        setName('');
+        setSurname('');
+        setEmail('');
+        setPhone('');
+        setDescription('');
         console.log('Cancelado');
         e.preventDefault();
    
