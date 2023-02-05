@@ -17,11 +17,10 @@
 
     --btn-radius: 20px;
     --form-radius: 20px;
-    /* --input-box-size: calc(450px - 414px); */
 
     /* GAPS */
 
-    --gap-input-boxes: calc(450px - 414px);
+    --gap-input-boxes: calc(450px - 440px);
 }
 
 body {
@@ -52,6 +51,13 @@ body {
 .personal-info {
     display: flex;
     gap: var(--gap-input-boxes);
+}
+
+div.personal-info > div.form-datas.name > input,
+div.personal-info > div.form-datas.surname > input,
+div.contact-info > div:nth-child(1) > input,
+div.contact-info > div:nth-child(2) > input {
+    width: 208px;
 }
 
 .contact-info {
