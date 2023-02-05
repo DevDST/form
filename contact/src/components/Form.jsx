@@ -73,7 +73,8 @@ const [description , setDescription] = useState('')
 
       <div className="container">
           <form action="" className="form">
-            <div className="form-datas">
+            <div className="personal-info">
+            <div className="form-datas name">
             <label htmlFor="nombre">
                 Nombre:
             </label>
@@ -84,7 +85,7 @@ const [description , setDescription] = useState('')
                     onChange={(e) => {handleNameChange(e)}}
                 />
             </div>
-            <div className="form-datas">
+            <div className="form-datas surname">
             <label htmlFor="apellidos">
                 Apellidos:
             </label>
@@ -95,8 +96,10 @@ const [description , setDescription] = useState('')
                     onChange={(e) => {handleSurnameChange(e)}}
             />
             </div>
+            </div>
+            <div className="contact-info">
             <div className="form-datas">
-            <label htmlFor="direccion">
+            <label htmlFor="email">
                 Email:
             </label>
             <input 
@@ -116,6 +119,7 @@ const [description , setDescription] = useState('')
                     required
                     onChange={(e) => {handlePhoneChange(e)}}
             />
+            </div>
             </div>
             <div className="form-datas textarea">
             <label htmlFor="comentarios">
