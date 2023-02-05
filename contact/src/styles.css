@@ -1,5 +1,8 @@
 
+/* VARIABLES */
+
 :root {
+
     /* TEXT */
 
     --title-size: 1.4rem;
@@ -14,6 +17,7 @@
 
     --btn-radius: 20px;
     --form-radius: 20px;
+    --input-box-size: calc(450px - 414px);
 }
 
 body {
@@ -30,7 +34,7 @@ body {
     width: 450px;
     border: 1px solid black;
     border-radius: var(--form-radius);
-    margin: 5vh auto;
+    margin: 7vh auto;
     padding: 50px;
 
 }
@@ -38,11 +42,24 @@ body {
 .form-datas {
     display: flex;
     flex-direction: column;
+    /* margin-bottom: 20px; */
+    margin-bottom: 2vh;
+}
+
+.personal-info {
+    display: flex;
+    gap: var(--input-box-size);
+}
+
+.contact-info {
+    display: flex;
+    gap: var(--input-box-size);
     margin-bottom: 20px;
 }
 
 .form-datas label {
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
+    margin-bottom: 2vh;
     font-size: var(--paragraph-size);
     font-weight: var(--paragraph-weight);
     font-style: var(--paragraph-style);
@@ -53,18 +70,17 @@ body {
     padding: 4px;
 }
 
-.form-datas textarea{
-    margin-bottom: 15px;
-}
 
 textarea {
     font-size: var(--textarea-text-size);
-    height: 20vh;
+    height: 15vh;
 }
 
 .btn-container {
-    margin-top: 50px;
+    /* margin-top: 30px; */
+    margin-top: 6vh;
     display: grid;
+    /* gap: 10px; */
     gap: 10px;
 }
 
